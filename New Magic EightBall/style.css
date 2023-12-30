@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Tangerine, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 20px;
+    color:white;
+    text-align: center;
+}
+
+body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(91, 140, 169);
+}
+.ball{
+    width: 600px;
+    height: 600px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+.inputfield{
+    display: flex;
+    justify-content: center;
+   
+}
+input{
+    position: absolute;
+    top: 65vh;
+    padding: 15px 50px 15px 15px;
+    font-size: 30px;
+    border-radius: 30px;
+    text-align: left;
+    border: 0;
+    margin-top: 20px;
+}
+input:focus{
+    outline: 2px solid rgb(140,0,255);
+}
+
+button-1{
+    position: absolute;
+    top: 75vh;
+    padding: 10px 80px;
+    font-size: 30px;
+    border-radius: 30px;
+    background-color: purple;
+    color: white;
+    border: 2px solid rgb(18,0,31);
+}
+#button-1:hover{
+    background-color: red;
+    font-size: 30px;
+    transition: background-color 250ms linear 250ms,
+    font-size 150ms linear 150ms;
+}
+#button-1:active{
+    background-color: rgb(34,25,34);
+      
+}
+#response{
+    width: 700px;
+    color: red;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    font-family:Tangerine;
+    
+    
+}
+.whitesurface{
+    width: 280px;
+    height: 280px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+input {
+    text-align: center;
+}
+
+#secret{
+    color: rgb(91, 140, 169);
+    text-align: center;
+    height: 100px;
+    width: 100%;
+}
+
+#secret:hover{
+    background-color: aqua;
+    color: red;
+    font-size: 80px;
+    transition: all 300ms linear 1s;
+
+}
