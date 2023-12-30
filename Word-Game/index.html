@@ -1,0 +1,32 @@
+<html>
+<!--scripts and stylesheet-->
+<head>
+    <script src="testscript.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <!--page topper-->
+        <nav>
+            <h1 id="page-top"> Lily's Crazy Phrase</h1>
+        </nav>
+        <!--text input for the game-->
+        <div class="Word-input">
+            <div class="word"><input type="text" id="word-1" name="word-1" placeholder="Lily's" onfocus="this.value=''"></div>
+            <div class="word"><input type="text" id="word-2" name="word-2" placeholder="Crazy" onfocus="this.value=''"></div>
+            <div class="word"><input type="text" id="word-3" name="word-3" placeholder="Words!" onfocus="this.value=''"></div>
+        </div>
+        <!--text display from the script fullPhrase function-->
+            <div class="input">
+                <h2 id="text-return"></h2>
+            </div>
+            <div class="button-flex">
+        <!--button to execute the js script- returns the word variables, inserts them into the phrase and returns them here-->
+            <button class="btn-1" onclick="fullPhrase()">Submit</button>
+    </div>
+
+    </main>
+</body>
+
+</html>
