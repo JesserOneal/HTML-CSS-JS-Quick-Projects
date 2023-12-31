@@ -1,0 +1,123 @@
+body {
+    margin: 0px;
+    font-family: "Helvetica", sans-serif;
+    color: seashell;
+    background-color: black;
+    font-size: 22px;
+    text-align: center;
+  }
+  
+.main {
+    text-align: center;
+}
+  
+a{
+    color: seashell; 
+  }
+  
+  h2,
+  h3,
+  h4 {
+    margin: 0;
+    padding: 10px;
+    opacity: 0.9
+  }
+  
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Header Section */
+header {
+    width: 100%;
+    z-index: 1;
+    height: 69px;
+    background-color: black;
+    border-bottom: 3px solid seashell;
+    align-items: center;
+  }
+  
+  header img {
+    height: 50px;
+    padding-left: 10px;
+  }
+  
+  nav {
+    text-align: right;
+    flex-grow: 1;
+  }
+  
+  nav span {
+    display: inline-block;
+    padding: 20px 10px;
+  }
+  
+  /* Mission Section */
+  
+  #mission {
+    height: 700px;
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
+    padding-top: 70px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+  }
+  
+  #mission .content {
+    margin: auto;
+    background-color: black;
+    
+  }
+.content{
+    width: 100%
+}
+  
+#store {
+    width: 100%;
+    margin: auto;
+padding-top: 70px;
+  }
+  
+  .items {
+    padding: 5px;
+  }
+  
+.items img {
+    height: 200px;
+    margin: auto auto;
+    display: block;
+  }
+  
+  /* Locations */
+  
+#locations {
+    padding: 70px;
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg");
+    background-size: cover;
+    }
+  
+#locations .flex-container {
+    margin: auto;
+   
+      
+    }
+    
+.location {
+      opacity: 1.0;
+      padding: 10px;
+      margin: 5px 20px;
+      background-color: black;
+      flex-basis: 280px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+}
+  
+@media screen and (max-width: 992px) {
+    .flex-container{
+        display: block;
+    }
+
+  }
