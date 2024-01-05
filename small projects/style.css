@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to bottom right, #3d009e, #b93efc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/* main container housing notification*/
+.container{
+    width: 40vw;
+    background: white;
+    border-radius: 15px;
+}
+/* header and button  */
+.container h2, .container button{
+    margin: 3rem 0;
+}
+
+.mark-read{
+    background-color: rgb(231, 174, 231);
+    border-radius: 25px;
+    box-shadow: 2px 2px 3px grey;
+    padding: .5rem;
+    transition: 200ms all;
+}
+.mark-read:hover{
+    background-color: rgb(231, 174, 231, 0.6);
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2rem;
+}
+
+hr{
+    color: rgb(128, 128, 128,0.7);
+    margin: 0 2rem;
+}
+/* notification*/
+.notification{
+   display: flex;
+  
+}
+
+.profile-img{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    margin: 2rem 2rem 2rem 2rem;
+}
+
+.request{
+    padding: 2rem 0 0 0;
+}
+
+.accept-btn, .decline-btn{
+    background-color: #3d009e;
+    color: whitesmoke;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    transition: 200ms all;
+}
+.accept-btn:hover, .decline-btn:hover{
+    background-color: rgb(53, 8, 168, 0.7);
+}
+.accept-query{
+    padding-top: .25rem;
+    color: gray;
+}
+
+
+.removed{
+    text-align: center;
+    padding: 1rem 0;
+    justify-self: center;
+}
