@@ -5,13 +5,13 @@ newGameBtn.addEventListener('click', gameReset);
 const gameBoxes = Array.from(document.getElementsByClassName('box'));
 
 const O = 'O';
-const X = 'X';
+const X = `X`;
 let currentPlayer = X;
 const spaces = Array(9).fill(null);
 
 let startGame = () => {
     gameBoxes.forEach(box => box.addEventListener('click', boxClicked))
-}
+};
 
 function boxClicked(e){
     let id = e.target.id;
@@ -21,9 +21,8 @@ function boxClicked(e){
     }
     checkWinner();
     currentPlayer = currentPlayer == X ? O : X;
-    
- 
-}
+};
+
 const winCondArr = [
     [0,1,2],
     [3,4,5],
@@ -43,10 +42,9 @@ function checkWinner() {
         } else if(spaces[a] == 'O' && spaces[b] == 'O' && spaces[c] == 'O'){
             playerMessage.innerText = 'Player 2 Wins'
         }
-
     }
     return
-}
+};
 
 startGame()
 //functions to evaluate winner
@@ -56,5 +54,5 @@ function gameReset(){
     gameBoxes.forEach(box => box.innerText = '');
     playerMessage.innerHTML = "Tic Tac Toe";
     currentPlayer = X
-}
+};
 
