@@ -78,14 +78,14 @@ class Game{
         return 
     } 
     scrambleNameLetters() {
-        let array = this.current.nameArray();
-        let currentIndex = array.length,  randomIndex;
+        let arr = this.current.nameArray();
+        let currentIndex = arr.length,  randomIndex;
         while (currentIndex > 0) {
             randomIndex = Math.floor(Math.random() * currentIndex);
             currentIndex--;
-            [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+            [arr[currentIndex], arr[randomIndex]] = [arr[randomIndex], arr[currentIndex]];
         }
-            return this.nameScramble = array;
+            return this.nameScramble = arr;
     }
     unscrambleNameLetters(){
         return this.current.nameArray()
