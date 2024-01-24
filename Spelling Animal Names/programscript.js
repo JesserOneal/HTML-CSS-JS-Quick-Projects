@@ -3,15 +3,20 @@ const userName = 'Cookie the Cat'; // -- will be an input field and stored in lo
 const userInput = 'HIPPO';
 
 class Animals{
-    constructor(name, imgUrl){
+    constructor(name, imgUrl, sound){
         this._name = name,
-        this._url = imgUrl
+        this._url = imgUrl,
+        this._sound = sound
     }
     getName(){
         return this._name
     }
     getImage(){
         return this._url
+    }
+    getSound(){
+        const playSound = new Audio(this._sound);
+        playSound.play()
     }
     nameArray(){
         return this.getName().split('')
@@ -20,8 +25,9 @@ class Animals{
 
 const animalArray = [
     new Animals('hippo', './images/hippo-img.jpg'),
-    new Animals('chicken', './images/chicken.jpg'),
-    new Animals('fish', './images/fish.jpg'),
+    new Animals('chicken', './images/chicken.jpg', './sounds/chicken-sound.mp3'),
+    new Animals('fish', './images/fish.jpg', './sounds/fish-sound.mp3'),
+    new Animals('cat', './images/cat.avif', './sounds/cat-sound.mp3')
 ];
 
 class Game{
@@ -47,9 +53,11 @@ class Game{
         if(currentVal === this.current && currentIndex < this.animalArr.length -1){
             currentVal = this.animalArr[currentIndex + 1];
             this.current = currentVal;
+            this.current.getSound()
         } else {
             currentVal = this.animalArr[0];
             this.current = currentVal;
+            this.current.getSound()
         }
         startGame()
         return
@@ -60,9 +68,11 @@ class Game{
         if(currentVal === this.current && currentIndex > 0){
             currentVal = this.animalArr[currentIndex - 1];
             this.current = currentVal;
+            this.current.getSound()
         } else {
             currentVal = this.animalArr[this.animalArr.length -1];
             this.current = currentVal;
+            this.current.getSound()
         }
         startGame()
         return 
